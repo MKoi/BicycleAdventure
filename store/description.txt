@@ -1,0 +1,5 @@
+Cycle your way through deserts, forests and rocky wastelands in this entertaining 2d game. Beware of falling bridges and rocks. Enjoy the ride!
+
+New in version 1.1
+- new terrain and jumps
+- improved bike handling on rough terrain

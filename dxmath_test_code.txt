@@ -1,0 +1,42 @@
+#ifdef B2_DXMATH_FOO
+		for (int32 j = 0; j < pointCount; ++j)
+		{
+			b2VelocityConstraintPoint* vcp = vc->points + j;
+			// b2Cross  = b2Vec2(-s * a.y, s * a.x);
+			XMVECTOR v1 = XMVectorSet(vcp->rA.x, vcp->rA.y, vcp->rB.x, vcp->rB.y);
+			XMVECTOR v2 = XMVectorSet(-wB, wB, wA, -wA);
+			XMVECTOR v3 = XMVectorSet(vB.x, vB.y, -vA.x, -vA.y);
+			XMVECTOR v4 = XMVectorSet(tangent.x, tangent.y, 0.0f, 0.0f);
+			v1 = XMVectorSwizzle<3,2,1,0>(v1);
+			v2 = XMVectorMultiplyAdd(v1, v2, v3);
+			v3 = XMVectorRotateLeft<2>(v2);
+			v3 = XMVectorAdd(v2, v3);
+			float32 vt = XMVectorGetX(XMVector2Dot(v3, v4)) - vc->tangentSpeed;
+			float32 lambda = vcp->tangentMass * (-vt);
+
+			// b2Clamp the accumulated force
+			float32 maxFriction = friction * vcp->normalImpulse;
+			float32 newImpulse = b2Clamp(vcp->tangentImpulse + lambda, -maxFriction, maxFriction);
+			lambda = newImpulse - vcp->tangentImpulse;
+			vcp->tangentImpulse = newImpulse;
+			v4 = XMVectorScale(v4, lambda);
+			v3 = XMVectorScale(v4, mA);
+			v2 = XMVectorSwizzle<3,2,1,0>(v1);
+			wA -= XMVectorGetX(XMVectorScale(XMVector2Cross(v2, v4), iA));
+			vA.x -= XMVectorGetX(v3);
+			vA.y -= XMVectorGetY(v3);			
+			v3 = XMVectorScale(v4, mB);
+			v2 = XMVectorRotateLeft<2>(v2);
+			wB += XMVectorGetX(XMVectorScale(XMVector2Cross(v2, v4), iB));
+			vB.x += XMVectorGetX(v3);
+			vB.y += XMVectorGetY(v3);
+
+		}
+
+#else
+
+	//context->RSSetState(m_states->CullNone());
+	//context->OMSetDepthStencilState(m_states->DepthDefault(), 0);
+
+	//context->OMSetBlendState(m_states->Additive(), nullptr, 0xFFFFFFFF);
+	//context->OMSetBlendState(m_states->NonPremultiplied(), Colors::White, 0xFFFFFFFF);

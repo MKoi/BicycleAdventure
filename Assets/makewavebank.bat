@@ -1,0 +1,1 @@
+xwbtool -o gamesounds.xwb -h ..\gamesounds.h cheering.wav jee1.wav jee2.wav jee3.wav pedaling.wav rolling.wav big_stone.wav menu_click.wav auts1.wav auts2.wav auts3.wav brake_short.wav brake_long.wav rock1.wav rock2.wav rock3.wav pedal1.wav pedal2.wav splash.wav theme_happy.wav theme_sad.wav theme_start.wav gravel.wav

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>17b52f90-9b33-4188-8a0e-808582bbabbc</UniqueIdentifier>
+      <Extensions>ico;bmp;dlg;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;resw;resjson</Extensions>
+    </Filter>
+    <Filter Include="Levels">
+      <UniqueIdentifier>{1abcd54b-4669-4e5c-a592-c68cc3ccc851}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\ABA_tile_small.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ABA_tile_medium.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ABA_icon.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SimplePixelShader.hlsl" />
+    <FxCompile Include="SimpleVertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BicycleAdventure.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Bicycle.cpp" />
+    <ClCompile Include="Controls.cpp" />
+    <ClCompile Include="Cyclist.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="VerticeBatch.cpp" />
+    <ClCompile Include="GameArea.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="AnimatedValue.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="Theme.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Particles.cpp" />
+    <ClCompile Include="Water.cpp" />
+    <ClCompile Include="GameAudio.cpp" />
+    <ClCompile Include="BackgroundLayer.cpp" />
+    <ClCompile Include="MovingPlatform.cpp" />
+    <ClCompile Include="FallingBlock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BicycleAdventure.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="GameArea.h" />
+    <ClInclude Include="Bicycle.h" />
+    <ClInclude Include="Controls.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Cyclist.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="VerticeBatch.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="AnimatedValue.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Script.h" />
+    <ClInclude Include="Theme.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Particles.h" />
+    <ClInclude Include="Water.h" />
+    <ClInclude Include="BreakableWall.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Hills.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Hills2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Jump.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Tunnel.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAudio.h" />
+    <ClInclude Include="Uphill.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Downhill.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundLayer.h" />
+    <ClInclude Include="Bridge2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Ramps.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingPlatform.h" />
+    <ClInclude Include="Tunnel2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Jump2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakableWall2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="gamesounds.h" />
+    <ClInclude Include="Bridge3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Downhill2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Hills3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Jump3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Ramps2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Tunnel3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Uphill2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakableWall3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Downhill3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="FallingBlock.h" />
+    <ClInclude Include="Bridge4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Hills4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Jump4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Tunnel4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Downhill4.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dxmath_test_code.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Box2DWP8Test_2014_06_12_09_07_54.sap" />
+    <None Include="Box2DWP8Test_2014_06_12_09_08_31.sap" />
+    <None Include="Box2DWP8Test_2014_08_15_10_04_48.sap" />
+    <None Include="Assets\gamefont.spritefont">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="Box2DWP8Test_2014_09_04_11_58_22.sap" />
+    <None Include="Assets\gamesounds.xwb">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="BicycleAdventure_2015_04_14_12_31_26.sap" />
+  </ItemGroup>
+</Project>
